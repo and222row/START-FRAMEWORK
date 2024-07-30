@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import img_1 from "./../../assets/poert1.png";
+import img_2 from "./../../assets/port2.png";
+import img_3 from "./../../assets/port3.png";
 
 export default function Portfolio() {
-  const imgSrc = [
-    "./src/assets/poert1.png",
-    "./src/assets/port2.png",
-    "./src/assets/port3.png",
-  ];
+  const imgSrc = [`${img_1}`, `${img_2}`, `${img_3}`];
   const [modalImgsrc, setModalImgSrc] = useState("");
   function changeModalImg(src) {
     setModalImgSrc(src);
@@ -30,7 +29,7 @@ export default function Portfolio() {
                   changeModalImg(imgSrc[0]);
                 }}
               >
-                <img src="./src/assets/poert1.png" className=" w-full" />
+                <img src={img_1} className=" w-full" />
                 <div className=" absolute start-0 w-full top-0  h-full flex justify-center items-center bg-[#1abc9ce6] opacity-0 transition-opacity duration-500 hover:opacity-100 cursor-pointer">
                   <i className="text-white fa-solid fa-plus fa-6x"></i>
                 </div>
@@ -43,7 +42,7 @@ export default function Portfolio() {
                   changeModalImg(imgSrc[1]);
                 }}
               >
-                <img src="./src/assets/port2.png" className=" w-full" />
+                <img src={img_2} className=" w-full" />
                 <div className=" absolute start-0 w-full top-0  h-full flex justify-center items-center bg-[#1abc9ce6] opacity-0 transition-opacity duration-500 hover:opacity-100 cursor-pointer">
                   <i className="text-white fa-solid fa-plus fa-6x"></i>
                 </div>
@@ -56,7 +55,7 @@ export default function Portfolio() {
                   changeModalImg(imgSrc[2]);
                 }}
               >
-                <img src="./src/assets/port3.png" className=" w-full" />
+                <img src={img_3} className=" w-full" />
                 <div className=" absolute start-0 w-full top-0  h-full flex justify-center items-center bg-[#1abc9ce6] opacity-0 transition-opacity duration-500 hover:opacity-100 cursor-pointer">
                   <i className="text-white fa-solid fa-plus fa-6x"></i>
                 </div>
@@ -69,7 +68,7 @@ export default function Portfolio() {
                   changeModalImg(imgSrc[0]);
                 }}
               >
-                <img src="./src/assets/poert1.png" className=" w-full" />
+                <img src={img_1} className=" w-full" />
                 <div className=" absolute start-0 w-full top-0  h-full flex justify-center items-center bg-[#1abc9ce6] opacity-0 transition-opacity duration-500 hover:opacity-100 cursor-pointer">
                   <i className="text-white fa-solid fa-plus fa-6x"></i>
                 </div>
@@ -82,7 +81,7 @@ export default function Portfolio() {
                   changeModalImg(imgSrc[1]);
                 }}
               >
-                <img src="./src/assets/port2.png" className=" w-full" />
+                <img src={img_2} className=" w-full" />
                 <div className=" absolute start-0 w-full top-0  h-full flex justify-center items-center bg-[#1abc9ce6] opacity-0 transition-opacity duration-500 hover:opacity-100 cursor-pointer">
                   <i className="text-white fa-solid fa-plus fa-6x"></i>
                 </div>
@@ -95,7 +94,7 @@ export default function Portfolio() {
                   changeModalImg(imgSrc[2]);
                 }}
               >
-                <img src="./src/assets/port3.png" className=" w-full" />
+                <img src={img_3} className=" w-full" />
                 <div className=" absolute start-0 w-full top-0  h-full flex justify-center items-center bg-[#1abc9ce6] opacity-0 transition-opacity duration-500 hover:opacity-100 cursor-pointer">
                   <i className="text-white fa-solid fa-plus fa-6x"></i>
                 </div>

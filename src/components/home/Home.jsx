@@ -1,15 +1,12 @@
 import React from "react";
+import homeImg from "./../../assets/avataaars.svg";
 
 export default function Home() {
   return (
     <>
       <div className="flex justify-center items-center bg-[#1abc9c] mt-20">
         <div className="text-center mt-20 min-h-[calc(-112px+100vh)]">
-          <img
-            src="./src/assets/avataaars.svg"
-            alt=""
-            className="mb-3 w-full"
-          />
+          <img src={homeImg} alt="" className="mb-3 w-full" />
           <div className="text-white pt-4">
             <h2 className="font-bold text-4xl mb-5">START FRAMEWORK</h2>
             <div className="flex items-center justify-center mb-5">

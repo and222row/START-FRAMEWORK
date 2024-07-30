@@ -3,13 +3,16 @@ import "./App.css";
 import Layout from "./components/Layout/Layout";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Home from "./components/home/Home";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const route = createBrowserRouter([
+  const route = createHashRouter([
     {
       path: "/",
       element: <Layout />,
